@@ -232,6 +232,9 @@ h1{
 	.promo img{
 		width: 100%;
 	}
+	.total h1{
+		text-align: left;
+	}
 }
 @media screen and (max-width: 950px) {
 	#promociones{
@@ -308,6 +311,14 @@ h1{
 	.promo{
 		width: 50%;
 	}
+	.total{
+		display: block;
+	}
+	#pagar{
+		width: 100%;
+	    margin: 10px auto;
+	    align-items: center;
+	}
 }
 @media screen and (max-width: 510px) {
 	.header .menu input:checked ~ ul{
@@ -327,5 +338,8 @@ h1{
 		text-align: left;
 		padding-bottom: 5px;
 		border-bottom: 1px solid black;
+	}
+	.total{
+		width: 80%;
 	}
 }

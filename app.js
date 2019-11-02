@@ -108,14 +108,18 @@ const mostrarTotal = function() {
 	var total = 0;
 	let guardado = localStorage.getItem('carro');
 	let resultados = [];
-	resultados = JSON.parse(guardado);
-	for(let i=0;i<resultados.length;i++){
-		total += parseFloat(resultados[i].precio);
-	}
-	const titulo = document.querySelector('.total h1');
-	let leyenda = "";
-	if(total!=0){
+	if(guardado!=""){
+		resultados = JSON.parse(guardado);
+		for(let i=0;i<resultados.length;i++){
+			total += parseFloat(resultados[i].precio);
+		}
+		const titulo = document.querySelector('.total h1');
+		let leyenda = "";
 		titulo.innerHTML = leyenda.concat("Total: $",total);
+	}
+	else{
+		var element2 = document.getElementById("pagar");
+    	element2.parentNode.removeChild(element2);
 	}
 }
 
@@ -170,10 +174,10 @@ const redireccionCategoria = function(){
 const mostrarCarrito = function(){
 	let guardado = localStorage.getItem('carro');
 	let resultados = [];
-	resultados = JSON.parse(guardado);
 	const titulo = document.querySelector('.busqueda h1');
 	let leyenda = "";
-	if(resultados!=null){
+	if(guardado!=""){
+		resultados = JSON.parse(guardado);
 		titulo.innerHTML = leyenda.concat('Carrito de compra');
 		let j=0;
 		let maxI = resultados.length;
@@ -358,7 +362,7 @@ const products = [
 	},
 	{
 		id: '10',
-		name: 'TV LG 43 Pulgadas 4K Ultra HD',
+		name: 'LG 43 Pulgadas Ultra HD',
 		img: '10',
 		precio: 8999
 	},
@@ -376,7 +380,7 @@ const products = [
 	},
 	{
 		id: '13',
-		name: 'TV RCA 32 Pulgadas HD',
+		name: 'TV RCA 32 Pulgadas SMART TV HD',
 		img: '13',
 		precio: 3999
 	},
@@ -394,7 +398,7 @@ const products = [
 	},
 	{
 		id: '16',
-		name: ' 49 pulgadas Makena',
+		name: '49 pulgadas Makena SMART TV HD',
 		img: '16',
 		precio: 7519
 	},
