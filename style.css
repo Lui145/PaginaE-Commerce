@@ -1,0 +1,331 @@
+body{
+	margin: 0;
+	height: 100vh;
+}
+.contenedor-login{
+	margin: auto;
+	margin-top: 200px;
+	border: 1px solid black;
+	padding: 20px;
+	box-sizing: border-box;
+	max-width: 500px;
+}
+h1{
+	margin: 0;
+	text-align: center;
+}
+.form-login{
+	display: flex;
+	flex-direction: column;
+}
+.usernametxt{
+	/*border-radius: 10px;*/
+	border: 1px solid black;
+	padding: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+.btn-login{
+	border: 1px solid black;
+	background-color: black;
+	color: white;
+	font-weight: 800;
+	padding: 10px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.container-fluid{
+	margin: 0 auto;
+	max-width: 1200px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.row{
+	display: flex;
+	padding-top: 20px;
+}
+.logo a{
+	text-decoration: none;
+	color: #000;
+}
+.search{
+	margin-left: 100px;
+	margin-right: 100px;
+	margin: auto;
+}
+.search input{
+	border: none;
+	border-bottom: 1px solid black;
+}
+.btn{
+	border: none;
+	background-color: white;
+}
+.usershop{
+	margin: auto 0;
+	padding-left: 10px;
+}
+.username i{
+	padding-right: 10px;
+}
+.usershop a{
+	color: black;
+	text-decoration: none;
+	padding-right: 10px;
+}
+.usershop button{
+	
+}
+
+
+.header .menu{
+	width: 100%;
+}
+.header .menu input[type="checkbox"], .header .menu span{
+	display: none;
+}
+.header .menu ul{
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+}
+.header .menu ul li{
+	display: inline-block;
+}
+.header .menu ul li:not(:last-child) {
+	padding-right: 50px;
+}
+.header .menu ul li a{
+	text-decoration: none;
+	color: #000;
+}
+.slider img{
+	margin: auto;
+}
+
+.content{
+	margin: 0 auto;
+	display: flex;
+	flex-direction:  column;
+	align-items: center;
+	padding-bottom: 20px;
+}
+.seccion{
+	width: auto;
+	display: flex;
+	box-sizing: border-box;
+	margin-top: 10px;
+}
+.promociones{
+	display: flex;
+	flex-direction: row;
+}
+.promo{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.promo img{
+	width: 100%;
+}
+.mas-vendidos h3{
+	font-size: 28px;
+	text-align: center;
+}
+.busqueda h3{
+	text-align: center;
+}
+.total h1{
+	text-align: right;
+	width: 100%;
+}
+.producto{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.producto:not(:last-child){
+	margin-right: 20px;
+}
+.producto .image{
+	width: 300px;
+}
+.producto .texto{
+	margin: 0;
+	text-align: center;
+	width: 290px;
+}
+.total{
+	width: 60%;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+.total h1{
+	text-align: right;
+}
+#pagar{
+	margin-left: 50px;
+	margin-top: 0;
+}
+.footer-info{
+	border-top: 1px solid #000;
+}
+.newsletter{
+	width: fit-content;
+	margin: auto;
+}
+.newsletter input{
+	margin: 20px;
+	padding: 10px 0;
+	width: 200px;
+	border: none;
+	border-bottom: 1px solid #000;
+}
+.btn-relleno{
+	margin: 0px;
+	margin-top: 5px;
+	color: #fff;
+	background-color: #000;
+	border: 2px solid #fff;
+	padding: 10px;
+	font-weight: 800;
+}
+.footer-columns{
+	display: flex;
+	width: fit-content;
+	margin: auto;
+	padding-bottom: 20px;
+}
+.column:not(:last-child){
+	padding-right: 50px;
+}
+.redes ul li{
+	display: inline-block;
+}
+.redes ul li:not(:last-child){
+	padding-right: 10px;
+}
+.column ul, li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.column a{
+	text-decoration: none;
+	color: #000;
+}
+.footer-copy{
+	text-align: center;
+	background-color: #000;
+	color: #fff;
+}
+.footer-copy h5{
+	padding: 20px;
+	margin: 0;
+}
+@media screen and (max-width: 1192px){
+	.promo{
+		flex-direction: row;
+	}
+	.promo img{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 950px) {
+	#promociones{
+		display: block;
+	}
+	.productos{
+		display: block;
+	}
+}
+@media screen and (max-width: 862px) {
+	.footer-columns{
+		display: block;
+	}
+	.column:not(:last-child){
+		padding-right: 0;
+	}
+	.column h3{
+		text-align: center;
+	}
+	.column ul{
+		text-align: center;
+	}
+}
+@media screen and (max-width: 650px) {
+	.contenedor-login{
+		width: 95%;
+	}
+	.row{
+		width: 100%;
+	}
+	.row-head{
+		display: block;
+	}
+	.row-head .search{
+		width: 50%;
+		position: absolute;
+	}
+	#search{
+		width: 85%;
+	}
+	.row-head .usershop{
+		float: right;
+	} 
+	.header .menu{
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.header .menu ul{
+		display: none;
+		margin-top: 0;
+	}
+	.header .menu input[type="checkbox"] {
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		z-index: 2;
+		opacity: 0;
+	}
+	.header .menu span{
+		display: block;
+		width: 33px;
+		height: 4px;
+		margin-top: 5px;
+		margin-bottom: 5px;
+		position: relative;
+		background-color: #000;
+		border-radius: 3px;
+		z-index: 1;
+	}
+	.header .menu input:checked ~ ul{
+		display: block;
+	}
+	.promo{
+		width: 50%;
+	}
+}
+@media screen and (max-width: 510px) {
+	.header .menu input:checked ~ ul{
+		display: flex;
+		flex-direction: column;
+	}
+	.header .menu ul li:not(:last-child){
+		padding-right: 0px;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.header .menu ul li:first-child{
+		padding-top: 5px;
+		border-top: 1px solid black;
+	}
+	.header .menu ul li{
+		text-align: left;
+		padding-bottom: 5px;
+		border-bottom: 1px solid black;
+	}
+}
