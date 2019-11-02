@@ -278,6 +278,9 @@ h1{
 	.row-head .usershop{
 		float: right;
 	} 
+	.usershop a i, button{
+		font-size: 22px;
+	}
 	.header .menu{
 		margin-top: 10px;
 		margin-bottom: 10px;
